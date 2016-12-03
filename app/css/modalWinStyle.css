@@ -1,10 +1,10 @@
 .modalwin
 {
-    height: 200px;
-    width: 300px;
+    height: 500px;
+    width: 380px;
     border: 3px outset #ed1c40;
     background: #ffffff;
-    top: 20%;
+    top: 5%;
     right: 0;
     left: 0;
     font-size: 14px;
