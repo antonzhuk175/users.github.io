@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="utf-8">
         <title>Users Info</title>
-        <link rel="stylesheet" type="text/css" href="css/myStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/modalWinStyle.css" />
+        <link rel="stylesheet" type="text/css" href="css/tableStyle.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
-        <script src="js/myScript.js"></script>
+        <script src="js/angularScript.js"></script>
+        <script src="js/modalWinScript.js"></script>
 	</head>
 	<body ng-controller="usersController">
         <br>
@@ -19,6 +21,7 @@
                     <th>City</th>
                     <th>Phone</th>
 					<th>Website</th>
+                    <th>#</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,8 +33,14 @@
                     <td>{{user.address.city}}</td>
                     <td>{{user.phone}}</td>
 					<td>{{user.website}}</td>
+                    <td><a href="#" onclick="showModalWin();" class="pages">show detail info</a></td>
                 </tr>
             </tbody>
         </table>
+
+        <div id="mWin" class="modalwin">
+            <p>info</p>
+
+        </div>
 	</body>
 </html>
